@@ -5,7 +5,8 @@
 use sports
 
 2. list all databases present in local mongod server.
-// Answer here..
+
+show dbs
 
 3. create 3 collections named `cricket`, `football`, `TT` in sports database.
 
