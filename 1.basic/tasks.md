@@ -25,6 +25,8 @@ db.cricket.insertMany([{name: 'ishav', age: 25, email: 'ishav@gmail.com', state:
 
 5. list all collections in sports database.
 
+show collections
+
 6. rename `TT` collection to `tennis`.
 
 7. create a capped collection called `khokho` which should have max 3 documents.
