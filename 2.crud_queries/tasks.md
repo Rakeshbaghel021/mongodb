@@ -39,12 +39,20 @@ db.articles.update({title: 'C'}, {$set: {'author.name': 'CC'}})
 
 10. rename details field to description from articles collection. 
 
+db.articles.updateMany({}, {$rename: {'details':'description'}})
+
 11. Add additional tag in a specific document.
+
+
 
 12. Update an article's tags using $set and without $set.
   - Write the differences here ?
 
 13. Increment an auhtor's age by 5.  
+
+db.articles.update({title: 'B'}, {$inc: {'author.age': 5}})
+
+
 
 14. Delete a document using _id field with `db.COLLECTION_NAME.remove()`.
 
