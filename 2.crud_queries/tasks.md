@@ -8,7 +8,13 @@ db.createCollection('articles')
 
 3. Insert multiple documents(at least 3) into articles. It should have fields
 
+db.articles.insertMany([{title: 'Abc', description: 'A', author: {name: 'A', email: 'A', age: 65}, tags: ['A']},
+{title: 'Bca', description: 'B', author: {name: 'B', email: 'B', age: 66}, tags: ['B']},
+ {title: 'Cab', description: 'C', author: {name: 'C', email: 'C', age: 67}, tags: ['C']}])
+
 4. Find all the articles using `db.COLLECTION_NAME.find()`
+
+db.articles.find()
 
 5. Find a document using _id field.
 
