@@ -58,10 +58,16 @@ db.articles.update({title: 'B'}, {$inc: {'author.age': 5}})
 
 Use sample.js data for below queries.
 
+db.COLLECTION_NAME.remove(). db.articles.remove({_id: ObjectId("5d5c280962da9e9b5f997eb2")})
+
 1. Find all males who play cricket.
+
+
 
 2. Update user with extra golf field in sports array whose name is "Steve Ortega".
 
 3. Find all users who play either 'football' or 'cricket'.
 
 4. Find all users whose name includes 'ri' in their name.
+
+db.users.find({name: {$regex: /ri/}})
