@@ -54,3 +54,4 @@ db.copyDatabase('sports', 'games') use sports
 
 12. delete sports database. 
 
+db.dropDatabase()
