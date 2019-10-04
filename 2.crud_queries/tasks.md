@@ -1,6 +1,10 @@
 1. Create a database named `blog`.
 
+use blog
+
 2. Create a collection called 'articles'.
+
+db.createCollection('articles')
 
 3. Insert multiple documents(at least 3) into articles. It should have fields
 
