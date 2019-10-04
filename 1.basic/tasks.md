@@ -42,8 +42,15 @@ db.khokho.isCapped()
 
 9. remove all documents from `football` collection.
 
+db.football.remove({})
+
 10. delete cricket collection completely.
+
+db.cricket.drop()
 
 11. rename database sports to games
 
+db.copyDatabase('sports', 'games') use sports
+
 12. delete sports database. 
+
