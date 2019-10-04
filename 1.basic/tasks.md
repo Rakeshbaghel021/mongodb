@@ -10,6 +10,10 @@ show dbs
 
 3. create 3 collections named `cricket`, `football`, `TT` in sports database.
 
+db.createCollection('cricket') 
+db.createCollection('football') 
+db.createCollection('TT')
+
 4. add 3 players in each of above collections which should have fields like `name`, `age`, `email`, state and auction_price.
 
 5. list all collections in sports database.
