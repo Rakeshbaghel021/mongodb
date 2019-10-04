@@ -18,13 +18,24 @@ db.articles.find()
 
 5. Find a document using _id field.
 
+db.articles.find({_id: ObjectId("5d5c280962da9e9b5f997eb0")})
+
 6. Find documents using title and author's name field.
+
+db.articles.find({title: 'Abc'})
 
 7. Find document using a specific tag.
 
+db.articles.find({'author.name': 'A'})
+db.articles.find({tags: 'B'})
+
 8. Update title of a document using its _id field.
 
+db.articles.update({_id: ObjectId("5d5c280962da9e9b5f997eb0")}, {$set: {title: 'Abc'}})
+
 9. Update a author's name using article's title.
+
+db.articles.update({title: 'C'}, {$set: {'author.name': 'CC'}})
 
 10. rename details field to description from articles collection. 
 
