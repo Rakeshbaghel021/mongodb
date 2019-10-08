@@ -50,8 +50,9 @@ db.cricket.drop()
 
 11. rename database sports to games
 
-db.copyDatabase('sports', 'games') use sports
+db.copyDatabase('sports', 'games')
 
 12. delete sports database. 
 
+use sports
 db.dropDatabase()
