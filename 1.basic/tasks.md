@@ -18,9 +18,9 @@ db.createCollection('TT')
 
 db.cricket.insertMany([{name: 'rakesh', age: 25, email: 'rkrkumar021@gmail.com', state: 'UP', auction_price: 10000}, {name: 'avinash', age: 24, email: 'avi@xyz.com', state: 'orissa', auction_price: 60}, {name: 'chadu', age: 22, email: 'chadu@xyz.com', state: 'AP', auction_price: 60}])
 
-db.cricket.insertMany([{name: 'vikas', age: 25, email: 'rkrk@gmail.com', state: 'UP', auction_price: 10000}, {name: 'avi', age: 24, email: 'avi@xyz.com', state: 'orissa', auction_price: 60}, {name: 'chaduwala', age: 22, email: 'chadu@xyz.com', state: 'AP', auction_price: 60}])
+db.football.insertMany([{name: 'vikas', age: 25, email: 'rkrk@gmail.com', state: 'UP', auction_price: 10000}, {name: 'avi', age: 24, email: 'avi@xyz.com', state: 'orissa', auction_price: 60}, {name: 'chaduwala', age: 22, email: 'chadu@xyz.com', state: 'AP', auction_price: 60}])
 
-db.cricket.insertMany([{name: 'ishav', age: 25, email: 'ishav@gmail.com', state: 'HP', auction_price: 10000}, {name: 'chadni', age: 24, email: 'achad@xyz.com', state: 'mumbai', auction_price: 60}, {name: 'suraj', age: 22, email: 'suraj@xyz.com', state: 'Bihar', auction_price: 7656}])
+db.TT.insertMany([{name: 'ishav', age: 25, email: 'ishav@gmail.com', state: 'HP', auction_price: 10000}, {name: 'chadni', age: 24, email: 'achad@xyz.com', state: 'mumbai', auction_price: 60}, {name: 'suraj', age: 22, email: 'suraj@xyz.com', state: 'Bihar', auction_price: 7656}])
 
 
 5. list all collections in sports database.
@@ -50,7 +50,7 @@ db.cricket.drop()
 
 11. rename database sports to games
 
-db.copyDatabase('sports', 'games')
+db.copyDatabase('sports', 'games')  
 
 12. delete sports database. 
 
