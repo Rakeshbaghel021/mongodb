@@ -38,7 +38,7 @@ db.articles.update({_id: ObjectId("5d5c280962da9e9b5f997eb0")}, {$set: {title: '
 
 9. Update a author's name using article's title.
 
-db.articles.update({title: 'C'}, {$set: {'author.name': 'CC'}})
+db.articles.update({title: 'GOT-3'}, {$set: {'author.name': 'CC'}})
 
 10. rename details field to description from articles collection. 
 
